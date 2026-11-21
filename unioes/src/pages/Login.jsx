@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Form, Input, Checkbox, Button, Alert, ConfigProvider } from "antd";
-<<<<<<< HEAD
 import gerb from "../assets/images/gerb.png";
-=======
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 const API_URL = "http://127.0.0.1:8000/api/auth";
 
@@ -33,10 +30,7 @@ function Login() {
       if (res.ok) {
         const storage = remember ? localStorage : sessionStorage;
         storage.setItem("token", data.token);
-<<<<<<< HEAD
         storage.setItem("refresh", data.refresh);
-=======
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
         storage.setItem("user", JSON.stringify(data.user));
         navigate(ROUTES[data.user.role] || "/", { replace: true });
       } else {
@@ -44,22 +38,14 @@ function Login() {
           data.message ||
             data.student_id?.[0] ||
             data.password?.[0] ||
-<<<<<<< HEAD
             "Ошибка входа",
-=======
-            "Kirishda xatolik",
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
         );
       }
     } catch (err) {
       console.error(err);
       setError("Server mavjud emas");
-<<<<<<< HEAD
     } finally {
       setLoading(false);
-=======
-      
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
     }
   };
 
@@ -81,21 +67,13 @@ function Login() {
             {/* Эмблема университета */}
             <div className="flex flex-col items-center mb-7">
               <img
-<<<<<<< HEAD
                 src={gerb}
-=======
-                src="/cyber-emblem.png"
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                 alt="Cyber University emblem"
                 className="w-31.25 h-31.25 object-contain mb-3"
               />
 
               <h1 className="text-center text-[21px] leading-7 font-bold text-[#111111]">
-<<<<<<< HEAD
                 Государственный университет “Cyber university” 
-=======
-                “Cyber university”
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
               </h1>
             </div>
 
@@ -117,36 +95,23 @@ function Login() {
                 size="large"
               >
                 <h1 className="mb-2 text-[16px] leading-7 text-[#111111]">
-<<<<<<< HEAD
                   ID
-=======
-                  Student ID
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                 </h1>
                 <Form.Item
                   name="student_id"
                   normalize={(value) => (value || "").replace(/\D/g, "")}
                   rules={[
-<<<<<<< HEAD
                     { required: true, message: "Введите ID" },
                     {
                       pattern: /^\d{12}$/,
                       message:
                         "ID должен состоять из 12 цифр.",
-=======
-                    { required: true, message: "Student ID ni kiriting" },
-                    {
-                      pattern: /^\d{12}$/,
-                      message:
-                        "Student ID 12 ta raqamdan iborat bo'lishi kerak",
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                     },
                   ]}
                 >
                   <Input
                     inputMode="numeric"
                     maxLength={12}
-<<<<<<< HEAD
                     placeholder="ID"
                   />
                 </Form.Item>
@@ -162,23 +127,6 @@ function Login() {
 
                 <Form.Item name="remember" valuePropName="checked">
                   <Checkbox>Запомнить меня</Checkbox>
-=======
-                    placeholder="Student ID ni kiriting"
-                  />
-                </Form.Item>
-                <h1 className="mb-2 text-[16px] leading-7 text-[#111111]">
-                  Password
-                </h1>
-                <Form.Item
-                  name="password"
-                  rules={[{ required: true, message: "Parolni kiriting" }]}
-                >
-                  <Input.Password placeholder="Parolni kiriting" />
-                </Form.Item>
-
-                <Form.Item name="remember" valuePropName="checked">
-                  <Checkbox>Remember me</Checkbox>
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                 </Form.Item>
 
                 {error && (
@@ -201,11 +149,7 @@ function Login() {
                     shape="round"
                     style={{ height: 49, fontWeight: 500 }}
                   >
-<<<<<<< HEAD
                     {loading ? "Вводится..." : "Войти"}
-=======
-                    {loading ? "Kirilmoqda..." : "Kirish"}
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                   </Button>
                 </Form.Item>
               </Form>
@@ -219,41 +163,6 @@ function Login() {
         </footer>
       </div>
     </>
-<<<<<<< HEAD
-=======
-    // <div>
-    //   <form
-    //     onSubmit={handleSubmit}
-    //     style={{ maxWidth: 320, margin: "40px auto" }}
-    //   >
-    //     <h2>Вход</h2>
-
-    //     <input
-    //       type="text"
-    //       inputMode="numeric"
-    //       maxLength={12}
-    //       placeholder="Student id (12 цифр)"
-    //       value={student_id}
-    //       onChange={(e) => setStudentId(e.target.value.replace(/\D/g, ""))}
-    //       required
-    //     />
-
-    //     <input
-    //       type="password"
-    //       placeholder="Пароль"
-    //       value={password}
-    //       onChange={(e) => setPassword(e.target.value)}
-    //       required
-    //     />
-
-    //     {error && <p style={{ color: "red" }}>{error}</p>}
-
-    //     <button type="submit" disabled={loading}>
-    //       {loading ? "Вход..." : "Войти"}
-    //     </button>
-    //   </form>
-    // </div>
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   );
 }
 

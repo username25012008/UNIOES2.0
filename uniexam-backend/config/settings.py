@@ -10,17 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
-<<<<<<< HEAD
 import os
 import sys
 from pathlib import Path
 
 from django.core.exceptions import ImproperlyConfigured
 
-=======
-from pathlib import Path
-
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
 def _load_env():
     """Читает uniexam-backend/.env (KEY=VALUE), не перетирая переменные окружения."""
     f = BASE_DIR / ".env"
@@ -54,14 +48,6 @@ if not SECRET_KEY or "django-insecure" in SECRET_KEY or len(SECRET_KEY) < 32:
     SECRET_KEY = "dev-only-key-do-not-use-in-production-" + "x" * 30
 
 ALLOWED_HOSTS = [h for h in os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1").split(",") if h]
-=======
-SECRET_KEY = 'django-insecure-0p#d(7-*79t)3b-^gc7z#-&wwhdk1rh+e$s&#7a@!syzyrvhti'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 
 # Application definition
@@ -74,15 +60,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "rest_framework",
-<<<<<<< HEAD
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
     "users",
     "exams",
-=======
-    "corsheaders",
-    "users",
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 ]
 
 MIDDLEWARE = [
@@ -115,16 +96,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 AUTH_USER_MODEL = "users.User"
-<<<<<<< HEAD
 CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173").split(",")
-=======
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:5173"]
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
-<<<<<<< HEAD
 if os.environ.get("DB_NAME"):  # PostgreSQL для продакшена
     DATABASES = {"default": {
         "ENGINE": "django.db.backends.postgresql", "NAME": os.environ["DB_NAME"],
@@ -133,14 +109,6 @@ if os.environ.get("DB_NAME"):  # PostgreSQL для продакшена
         "CONN_MAX_AGE": 60}}
 else:
     DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": BASE_DIR / "db.sqlite3"}}
-=======
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 
 # Password validation
@@ -152,13 +120,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-<<<<<<< HEAD
         'OPTIONS': {'min_length': 8},
     },
     {
         'NAME': 'users.validators.ComplexPasswordValidator',
-=======
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -196,7 +161,6 @@ MAILERS = {
     },
 }
 REST_FRAMEWORK = {
-<<<<<<< HEAD
     "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     "DEFAULT_THROTTLE_CLASSES": ("rest_framework.throttling.ScopedRateThrottle",),
     "DEFAULT_THROTTLE_RATES": {"login": "10/min", "refresh": "60/min"},
@@ -234,15 +198,3 @@ EXAM_MAX_VIOLATIONS = int(os.environ.get("EXAM_MAX_VIOLATIONS", "3"))  # вых�
 if not DEBUG:
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SESSION_COOKIE_SECURE = CSRF_COOKIE_SECURE = os.environ.get("DJANGO_HTTPS", "0") == "1"
-=======
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-}
-
-from datetime import timedelta
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=1),
-    "AUTH_HEADER_TYPES": ("Bearer",),
-}
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc

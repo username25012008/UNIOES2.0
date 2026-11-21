@@ -12,19 +12,11 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-<<<<<<< HEAD
     def create_superuser(self, student_id, password=None, **extra):
         extra.setdefault("is_staff", True)
         extra.setdefault("is_superuser", True)
         extra.setdefault("role", Role.ADMIN)
         return self.create_user(student_id, password, **extra)
-=======
-        def create_superuser(self, student_id, password=None, **extra):
-            extra.setdefault("is_staff", True)
-            extra.setdefault("is_superuser", True)
-            extra.setdefault("role", Role.ADMIN)
-            return self.create_user(student_id, password, **extra)
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 class Role(models.TextChoices):
     STUDENT = "student", "Студент"
