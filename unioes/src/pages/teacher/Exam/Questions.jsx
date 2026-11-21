@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import {
@@ -10,6 +11,17 @@ import { api, downloadFile, uploadFile } from "../../../api/client.js";
 import RichText from "../../../components/common/RichText.jsx";
 import { CODE_TEMPLATE, MATH_SNIPPETS } from "../../../components/common/richtext.js";
 import Variants from "./Variants.jsx";
+=======
+import { useCallback, useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router";
+import {
+  App, Alert, Button, Card, Empty, Form, Input, InputNumber, Modal,
+  Popconfirm, Progress, Select, Skeleton, Space, Tag,
+} from "antd";
+import { ArrowLeftOutlined, DeleteOutlined, EditOutlined, MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
+
+import { api } from "../../../api/client.js";
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 import { DIFFICULTY, EXAM_TYPE, QUESTION_TYPE, STATUS } from "../../../components/common/constants.js";
 
 const DIFF_OPTIONS = Object.entries(DIFFICULTY).map(([value, d]) => ({ value, label: d.label }));
@@ -26,9 +38,12 @@ export default function Questions() {
   const [error, setError] = useState("");
   const [editing, setEditing] = useState(null); // null | "new" | question
   const [saving, setSaving] = useState(false);
+<<<<<<< HEAD
   const [importing, setImporting] = useState(false);
   const [lang, setLang] = useState("python");
   const textRef = useRef(null);
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
   const load = useCallback(async () => {
     try {
@@ -47,7 +62,10 @@ export default function Questions() {
   }, [load]);
 
   const qtype = Form.useWatch("question_type", form);
+<<<<<<< HEAD
   const qtext = Form.useWatch("text", form) || "";
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   const options = Form.useWatch("options", form) || [];
 
   if (loading) return <Skeleton active paragraph={{ rows: 8 }} />;
@@ -113,6 +131,7 @@ export default function Questions() {
     }
   };
 
+<<<<<<< HEAD
   const importFile = async (file) => {
     setImporting(true);
     try {
@@ -140,6 +159,8 @@ export default function Questions() {
   };
   const insertCode = () => insertText(CODE_TEMPLATE(lang));
 
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   const publish = async () => {
     try {
       await api(`/exams/${id}/publish/`, { method: "POST" });
@@ -221,7 +242,11 @@ export default function Questions() {
           <div className="text-slate-600">
             Сумма баллов вопросов: <b>{totalPoints}</b> из {exam.max_score}
           </div>
+<<<<<<< HEAD
           {totalPoints !== exam.max_score && questions.length > 0 && !exam.use_variants && (
+=======
+          {totalPoints !== exam.max_score && questions.length > 0 && (
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
             <div className="text-amber-600 text-sm mt-1">Для публикации сумма должна равняться максимальному баллу</div>
           )}
         </Card>
@@ -259,6 +284,7 @@ export default function Questions() {
         variant="borderless"
         title={`Вопросы (${questions.length})`}
         extra={
+<<<<<<< HEAD
           <Space wrap>
             <Dropdown menu={{ items: [{ key: "xlsx", label: "Шаблон Excel (.xlsx)" }, { key: "json", label: "Шаблон JSON" }],
               onClick: ({ key }) => downloadFile(`/exams/questions/template/?type=${key}`, `questions_template.${key}`).catch((e) => message.error(e.message)) }}>
@@ -271,6 +297,11 @@ export default function Questions() {
               Добавить вопрос
             </Button>
           </Space>
+=======
+          <Button type="primary" icon={<PlusOutlined />} disabled={locked} onClick={() => openForm()}>
+            Добавить вопрос
+          </Button>
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
         }
       >
         {questions.length === 0 ? (
@@ -282,8 +313,12 @@ export default function Questions() {
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="font-semibold text-slate-900">
+<<<<<<< HEAD
                       <span className="mr-1">{i + 1}.</span>
                       <RichText text={q.text} className="inline" />
+=======
+                      {i + 1}. {q.text}
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                     </div>
                     <Space className="mt-2" wrap size={[4, 4]}>
                       <Tag>{QUESTION_TYPE[q.question_type]}</Tag>
@@ -309,7 +344,11 @@ export default function Questions() {
                   <ul className="mt-3 mb-0 pl-5 text-slate-700">
                     {q.options.map((o, oi) => (
                       <li key={oi} className={q.correct_answers.includes(oi) ? "text-green-700 font-medium" : ""}>
+<<<<<<< HEAD
                         <RichText text={o} className="inline" />
+=======
+                        {o}
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                         {q.correct_answers.includes(oi) && " ✓"}
                       </li>
                     ))}
@@ -321,8 +360,11 @@ export default function Questions() {
         )}
       </Card>
 
+<<<<<<< HEAD
       <Variants exam={exam} locked={locked} questions={questions} onChanged={load} />
 
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
       <Modal
         open={Boolean(editing)}
         title={editing === "new" ? "Новый вопрос" : "Редактирование вопроса"}
@@ -336,6 +378,7 @@ export default function Questions() {
         forceRender
       >
         <Form form={form} layout="vertical" onFinish={save}>
+<<<<<<< HEAD
           <Form.Item label="Текст вопроса" name="text" rules={[{ required: true, message: "Введите текст вопроса" }]}
             extra="Код: <code lang=python> … </code>. Формулы LaTeX: $x^2$ в строке, $$\frac{a}{b}$$ отдельной строкой; знак доллара — \$">
             <Input.TextArea ref={textRef} rows={5} className="font-mono" />
@@ -356,6 +399,11 @@ export default function Questions() {
               <RichText text={qtext} />
             </div>
           )}
+=======
+          <Form.Item label="Текст вопроса" name="text" rules={[{ required: true, message: "Введите текст вопроса" }]}>
+            <Input.TextArea rows={3} />
+          </Form.Item>
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
           <div className="grid gap-4 sm:grid-cols-3">
             <Form.Item label="Тип" name="question_type">

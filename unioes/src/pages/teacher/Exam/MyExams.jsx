@@ -73,9 +73,14 @@ export default function MyExams() {
 
   const remove = async (id) => {
     try {
+<<<<<<< HEAD
       const res = await api(`/exams/${id}/`, { method: "DELETE" });
       if (res?.requested) message.info(res.detail, 6);
       else message.success("Экзамен удалён");
+=======
+      await api(`/exams/${id}/`, { method: "DELETE" });
+      message.success("Экзамен удалён");
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
       load();
     } catch (e) {
       message.error(e.message);
@@ -89,7 +94,10 @@ export default function MyExams() {
       render: (t, r) => (
         <div>
           <div className="font-semibold text-slate-900">{t}</div>
+<<<<<<< HEAD
           {r.pending_deletion && <Tag color="red">Запрос на удаление отправлен админу</Tag>}
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
           <div className="text-slate-500 text-sm">{r.subject}</div>
         </div>
       ),
@@ -164,10 +172,15 @@ export default function MyExams() {
               if (key === "delete")
                 modal.confirm({
                   title: `Удалить «${r.title}»?`,
+<<<<<<< HEAD
                   content: r.has_results
                     ? "У экзамена есть результаты студентов. Будет отправлен запрос администратору: удалить экзамен сможет только он."
                     : "Экзамен и все его вопросы будут удалены без возможности восстановления.",
                   okText: r.has_results ? "Отправить запрос" : "Удалить",
+=======
+                  content: "Экзамен и все его вопросы будут удалены без возможности восстановления.",
+                  okText: "Удалить",
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                   okButtonProps: { danger: true },
                   cancelText: "Отмена",
                   onOk: () => remove(r.id),

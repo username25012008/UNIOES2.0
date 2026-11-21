@@ -25,6 +25,7 @@ export const QUESTION_TYPE = {
 };
 
 export const fmtDate = (v) => (v ? dayjs(v).format("DD.MM.YYYY HH:mm") : "—");
+<<<<<<< HEAD
 
 export const APPEAL_STATUS = {
   submitted: ["У администратора", "blue"], review: ["У преподавателя", "orange"],
@@ -34,3 +35,5 @@ export const APPEAL_CATS = {
   wrong_question: "Некорректный вопрос", wrong_answer: "Неверный ответ", ambiguous: "Неоднозначная формулировка",
   technical: "Технический сбой", other: "Другое",
 };
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc

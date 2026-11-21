@@ -12,7 +12,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.4",
     "antd": "^6.7.0",
+<<<<<<< HEAD
     "katex": "^0.19.1",
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5",

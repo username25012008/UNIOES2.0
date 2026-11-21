@@ -7,6 +7,7 @@ export const getToken = () =>
   STORES.map((s) => s.getItem("token")).find(Boolean) || null;
 
 export const clearSession = () =>
+<<<<<<< HEAD
   STORES.forEach((s) => ["token", "refresh", "user"].forEach((k) => s.removeItem(k)));
 
 // Выход: refresh-токен отзывается на сервере, затем чистится локальная сессия
@@ -42,6 +43,9 @@ export const passwordRules = [
     },
   },
 ];
+=======
+  STORES.forEach((s) => ["token", "user"].forEach((k) => s.removeItem(k)));
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 export class ApiError extends Error {
   constructor(status, data) {
@@ -65,6 +69,7 @@ export function errorText(data) {
     .join(". ");
 }
 
+<<<<<<< HEAD
 // Обновляет access-токен по refresh-токену (один запрос на всех, пока идёт обновление)
 let refreshing = null;
 function refreshToken() {
@@ -87,6 +92,8 @@ function refreshToken() {
   return refreshing;
 }
 
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 export async function api(path, { method = "GET", body, params } = {}) {
   const query = params
     ? "?" +
@@ -95,8 +102,14 @@ export async function api(path, { method = "GET", body, params } = {}) {
       )
     : "";
 
+<<<<<<< HEAD
   const send = () =>
     fetch(`${API_URL}${path}${query}`, {
+=======
+  let res;
+  try {
+    res = await fetch(`${API_URL}${path}${query}`, {
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
       method,
       headers: {
         ...(body ? { "Content-Type": "application/json" } : {}),
@@ -104,12 +117,15 @@ export async function api(path, { method = "GET", body, params } = {}) {
       },
       body: body ? JSON.stringify(body) : undefined,
     });
+<<<<<<< HEAD
 
   let res;
   try {
     res = await send();
     // Access-токен живёт 15 минут: пробуем обновить и повторить запрос один раз
     if (res.status === 401 && (await refreshToken())) res = await send();
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   } catch {
     throw new ApiError(0, "Сервер недоступен");
   }
@@ -125,6 +141,7 @@ export async function api(path, { method = "GET", body, params } = {}) {
   if (!res.ok) throw new ApiError(res.status, data);
   return data;
 }
+<<<<<<< HEAD
 
 // Запрос с файлом/без JSON-тела (то же обновление токена, что и в api())
 async function rawFetch(path, init = {}) {
@@ -165,3 +182,5 @@ export async function downloadFile(path, filename) {
   a.remove();
   URL.revokeObjectURL(url);
 }
+=======
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc

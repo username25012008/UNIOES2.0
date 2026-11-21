@@ -17,9 +17,13 @@ export default function ExamForm() {
   const { message } = App.useApp();
   const [form] = Form.useForm();
 
+<<<<<<< HEAD
   const [teaching, setTeaching] = useState([]); // [{subject, groups:[{id,name}]}] — назначает админ
   const subject = Form.useWatch("subject", form);
   const groups = teaching.find((t) => t.subject === subject)?.groups || [];
+=======
+  const [groups, setGroups] = useState([]);
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   const [exam, setExam] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -28,7 +32,11 @@ export default function ExamForm() {
   useEffect(() => {
     (async () => {
       try {
+<<<<<<< HEAD
         setTeaching(await api("/teacher/teaching/"));
+=======
+        setGroups(await api("/groups/"));
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
         if (isEdit) {
           const e = await api(`/exams/${id}/`);
           setExam(e);
@@ -96,10 +104,15 @@ export default function ExamForm() {
           </Form.Item>
           <Row gutter={16}>
             <Col xs={24} md={12}>
+<<<<<<< HEAD
               <Form.Item label="Предмет" name="subject" rules={[{ required: true, message: "Выберите предмет" }]}
                 extra={!teaching.length ? "Вам пока не назначены предметы. Обратитесь к администратору" : undefined}>
                 <Select placeholder="Выберите предмет" options={teaching.map((t) => ({ value: t.subject, label: t.subject }))}
                   onChange={() => form.setFieldValue("groups", [])} />
+=======
+              <Form.Item label="Предмет" name="subject" rules={[{ required: true, message: "Введите предмет" }]}>
+                <Input />
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
               </Form.Item>
             </Col>
             <Col xs={24} md={12}>
@@ -125,7 +138,11 @@ export default function ExamForm() {
           >
             <Select
               mode="multiple"
+<<<<<<< HEAD
               placeholder={subject ? "Выберите одну или несколько групп" : "Сначала выберите предмет"} disabled={!subject}
+=======
+              placeholder="Выберите одну или несколько групп"
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
               options={groups.map((g) => ({ value: g.id, label: g.name }))}
             />
           </Form.Item>

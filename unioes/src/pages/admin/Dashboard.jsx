@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useCallback, useEffect, useState } from "react";
 import Profile from "../Profile.jsx";
 import { Navigate, Route, Routes } from "react-router";
@@ -242,3 +243,15 @@ export default function Admin() {
     </AntApp>
   );
 }
+=======
+const Admin = () => {
+    return (
+        <>
+            <div className="rounded-2xl bg-white p-6 shadow-md">
+                <h1>Панель админа</h1>
+            </div>
+        </>
+    );
+}
+export default Admin;
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc

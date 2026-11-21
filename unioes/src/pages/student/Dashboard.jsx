@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Profile from "../Profile.jsx";
 import { Navigate, Route, Routes, useNavigate, useParams } from "react-router";
@@ -346,3 +347,14 @@ export default function StudentDashboard() {
     </AntApp>
   );
 }
+=======
+import React from 'react'
+
+const Dashboard = () => {
+  return (
+	<div className='p-4 bg-white'>Dashboard</div>
+  )
+}
+
+export default Dashboard
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc

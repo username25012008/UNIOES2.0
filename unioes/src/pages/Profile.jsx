@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { App, Button, Card, Form, Input } from "antd";
 import { api, logout, passwordRules, PASSWORD_HINT } from "../api/client.js";
 
@@ -44,3 +45,14 @@ function ProfileInner() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+const Profile = () => {
+  return (
+    <div></div>
+  )
+}
+
+export default Profile
+>>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
