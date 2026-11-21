@@ -1,0 +1,1357 @@
+[
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$kOjZ2fwNu6ARx1RBl1sR58$glgD64d9cGn4X06gnbjPq67ev/4XyxdhMwG7Fb8uRjI=",
+    "last_login": "2026-11-11T09:06:57.463Z",
+    "is_superuser": false,
+    "student_id": "100000000001",
+    "full_name": "IVANOV IVAN IVANOVICH",
+    "short_name": "IVANOV I. I.",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "teacher",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$ByPPEl2aZvP3QxFNe4VUpq$GgssWje/vtTeERXAveRR0bU/dlTc6qDv+9xok6He6Vc=",
+    "last_login": "2026-11-09T15:37:01.938Z",
+    "is_superuser": false,
+    "student_id": "100000000002",
+    "full_name": "PETROV PETR PETROVICH",
+    "short_name": "PETROV P. P.",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "observer",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$l84xWKLwUbuAkuLFPug1gQ$lHE9esNT+HB6QlHUMGRCvBpq2MdcwvitOvy7MJSN+mI=",
+    "last_login": "2026-11-11T09:10:04.062Z",
+    "is_superuser": true,
+    "student_id": "100000000003",
+    "full_name": "ADMIN ADMIN ADMINOVICH",
+    "short_name": "ADMIN A. A.",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": true,
+    "role": "admin",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$YkGdCpmX33D361myEXMKE2$B0ttDn7oGMnNFJ7H2jbP3QrbQHv5qkqXRDfy8mnIzl4=",
+    "last_login": null,
+    "is_superuser": false,
+    "student_id": "100000000004",
+    "full_name": "Komiljonov Qodirjon Rustamovich",
+    "short_name": "",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "teacher",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$Y0b42YcBMzs9rRWxqcYwI4$w0hnuroOHSTWP8nDFkPt/poF2HHqFdF1RGSnE/67yR4=",
+    "last_login": "2026-11-10T14:37:40.874Z",
+    "is_superuser": false,
+    "student_id": "546251100227",
+    "full_name": "Komiljonov Qodirjon Rustamovich",
+    "short_name": "",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "SWE25-201",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "student",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$ldWOMQrQKQY3iymfTZmCvq$xUgmZotvouZ/pz08ZeNa2tUWhfPaSIB/9CyzaXCPvBM=",
+    "last_login": "2026-11-10T14:46:39.641Z",
+    "is_superuser": false,
+    "student_id": "100000000005",
+    "full_name": "Sobirov Otabek Akbarovich",
+    "short_name": "",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": false,
+    "is_staff": false,
+    "role": "teacher",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$OkztKVwD6BmgGxlta2kCUX$WncYwGK29ZuPEiyerRZCwH+VMEbH/lKixqDHfk0kfgw=",
+    "last_login": "2026-11-11T09:13:52.193Z",
+    "is_superuser": false,
+    "student_id": "100000000006",
+    "full_name": "Babayazov Saidbek Polatovich",
+    "short_name": "",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "teacher",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$65iCRVgeuzLlqutr4QgY3q$0nDTuZ6rC5r1JwAKn2SayD+0/iFEkttl6kGWpOjyPSA=",
+    "last_login": null,
+    "is_superuser": false,
+    "student_id": "100000000007",
+    "full_name": "Shamshetdinova Aysara ",
+    "short_name": "",
+    "email": null,
+    "phone_number": null,
+    "image": null,
+    "edu_faculty": "",
+    "edu_group": "CYB25-201",
+    "edu_level": "",
+    "edu_semester_id": null,
+    "edu_speciality": "",
+    "person_id": null,
+    "organization_id": 1,
+    "language_id": 3,
+    "notification_count": 0,
+    "identity_verified": false,
+    "is_active": true,
+    "is_staff": false,
+    "role": "student",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 1,
+  "fields": {
+    "name": "SWE25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 2,
+  "fields": {
+    "name": "CYB25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 3,
+  "fields": {
+    "name": "CEN25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 4,
+  "fields": {
+    "name": "LAW25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 5,
+  "fields": {
+    "name": "ECO25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.group",
+  "pk": 6,
+  "fields": {
+    "name": "MNG25-201",
+    "is_archived": false
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 2,
+  "fields": {
+    "teacher": [
+      "100000000001"
+    ],
+    "title": "Test",
+    "subject": "ДИСКРЕТНЫЕ СТРУКТУРЫ",
+    "description": "",
+    "exam_type": "test",
+    "duration_minutes": 60,
+    "start_at": "2026-11-10T19:00:00Z",
+    "end_at": "2026-11-11T17:00:00Z",
+    "max_score": 50,
+    "passing_score": 30,
+    "randomize_questions": true,
+    "allow_multiple_attempts": false,
+    "allow_appeals": true,
+    "show_results_immediately": true,
+    "results_published": false,
+    "status": "draft",
+    "created_at": "2026-11-11T09:08:30.155Z",
+    "updated_at": "2026-11-11T09:08:30.155Z",
+    "groups": [
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_created",
+    "resource": "user:4",
+    "previous_value": "",
+    "new_value": "teacher",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:09:06.418Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_created",
+    "resource": "user:5",
+    "previous_value": "",
+    "new_value": "student",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:09:50.517Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:1",
+    "previous_value": "",
+    "new_value": "SWE25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:10:22.801Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:2",
+    "previous_value": "",
+    "new_value": "CYB25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:10:38.413Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:3",
+    "previous_value": "",
+    "new_value": "CEN25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:10:47.580Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:4",
+    "previous_value": "",
+    "new_value": "LAW25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:10:55.737Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:5",
+    "previous_value": "",
+    "new_value": "ECO25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:11:08.466Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "group_created",
+    "resource": "group:6",
+    "previous_value": "",
+    "new_value": "MNG25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:11:37.048Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:1",
+    "previous_value": "",
+    "new_value": "ЛИНЕЙНАЯ АЛГЕБРА",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:11:59.343Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:2",
+    "previous_value": "",
+    "new_value": "ДИСКРЕТНЫЕ СТРУКТУРЫ",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:12:13.971Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:3",
+    "previous_value": "",
+    "new_value": "ЭЛЕКТРОНИКА И СХЕМЫ",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:12:33.069Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:4",
+    "previous_value": "",
+    "new_value": "ФИЛОСОФИЯ",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:12:43.338Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:5",
+    "previous_value": "",
+    "new_value": "Алгоритмы и структуры данных",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:12:55.528Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:1",
+    "previous_value": "",
+    "new_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / SWE25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:13:06.237Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:2",
+    "previous_value": "",
+    "new_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / CEN25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:13:34.546Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_deleted",
+    "resource": "assignment:2",
+    "previous_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / CEN25-201",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:15:10.278Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_deleted",
+    "resource": "assignment:1",
+    "previous_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / SWE25-201",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:15:11.803Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:3",
+    "previous_value": "",
+    "new_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / CEN25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:17:53.061Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:4",
+    "previous_value": "",
+    "new_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / CYB25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:17:53.064Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:5",
+    "previous_value": "",
+    "new_value": "IVANOV IVAN IVANOVICH / ДИСКРЕТНЫЕ СТРУКТУРЫ / SWE25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:17:53.066Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:5",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'student'}",
+    "new_value": "{'edu_group': 'SWE25-201', 'is_active': True, 'role': 'student'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T12:18:10.947Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "546251100227"
+    ],
+    "action": "attempt_started",
+    "resource": "exam:1",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T15:29:19.322Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "546251100227"
+    ],
+    "action": "attempt_submitted",
+    "resource": "attempt:1",
+    "previous_value": "",
+    "new_value": "None",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T15:29:36.160Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 24,
+  "fields": {
+    "user": [
+      "100000000001"
+    ],
+    "action": "exam_deletion_requested",
+    "resource": "exam:1",
+    "previous_value": "",
+    "new_value": "wsadassad",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:36:56.991Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 25,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "exam_deleted_with_results",
+    "resource": "exam:wsadassad",
+    "previous_value": "работ: 1",
+    "new_value": "удалено",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:37:44.099Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 26,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:2",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'observer'}",
+    "new_value": "{'edu_group': '', 'is_active': False, 'role': 'observer'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:54.343Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 27,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:2",
+    "previous_value": "{'edu_group': '', 'is_active': False, 'role': 'observer'}",
+    "new_value": "{'edu_group': '', 'is_active': True, 'role': 'observer'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:55.125Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 28,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:5",
+    "previous_value": "{'edu_group': 'SWE25-201', 'is_active': True, 'role': 'student'}",
+    "new_value": "{'edu_group': 'SWE25-201', 'is_active': False, 'role': 'student'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:55.875Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 29,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:1",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:56.412Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 30,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:4",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:57.351Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 31,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:1",
+    "previous_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:58.358Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 32,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:5",
+    "previous_value": "{'edu_group': 'SWE25-201', 'is_active': False, 'role': 'student'}",
+    "new_value": "{'edu_group': 'SWE25-201', 'is_active': True, 'role': 'student'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:42:59.552Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 33,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:1",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:43:00.090Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 34,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:4",
+    "previous_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:43:00.867Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 35,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:1",
+    "previous_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher'}",
+    "new_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-09T17:43:01.228Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 36,
+  "fields": {
+    "user": [
+      "546251100227"
+    ],
+    "action": "attempt_started",
+    "resource": "exam:1",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:37:48.171Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 37,
+  "fields": {
+    "user": [
+      "546251100227"
+    ],
+    "action": "attempt_terminated_violations",
+    "resource": "attempt:2",
+    "previous_value": "",
+    "new_value": "нарушений: 3",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:38:52.169Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 38,
+  "fields": {
+    "user": [
+      "546251100227"
+    ],
+    "action": "appeal_submitted",
+    "resource": "appeal:1",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:39:43.768Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 39,
+  "fields": {
+    "user": [
+      "100000000001"
+    ],
+    "action": "grade_revised_after_appeal",
+    "resource": "attempt:2",
+    "previous_value": "50.0",
+    "new_value": "50.0",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:40:57.621Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 40,
+  "fields": {
+    "user": [
+      "100000000001"
+    ],
+    "action": "appeal_decided",
+    "resource": "appeal:1",
+    "previous_value": "",
+    "new_value": "accepted",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:40:57.623Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 41,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_created",
+    "resource": "user:6",
+    "previous_value": "",
+    "new_value": "student",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:46:16.497Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 42,
+  "fields": {
+    "user": [
+      "100000000005"
+    ],
+    "action": "attempt_started",
+    "resource": "exam:1",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:46:47.866Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 43,
+  "fields": {
+    "user": [
+      "100000000005"
+    ],
+    "action": "attempt_submitted",
+    "resource": "attempt:3",
+    "previous_value": "",
+    "new_value": "0",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:47:45.388Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 44,
+  "fields": {
+    "user": [
+      "100000000001"
+    ],
+    "action": "exam_deletion_requested",
+    "resource": "exam:1",
+    "previous_value": "",
+    "new_value": "Test",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:48:54.868Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 45,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:6",
+    "previous_value": "{'edu_group': 'SWE25-201', 'is_active': True, 'role': 'student', 'full_name': 'Sobirov Otabek Akbarovich'}",
+    "new_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher', 'full_name': 'Sobirov Otabek Akbarovich'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:49:52.757Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 46,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "exam_deleted_with_results",
+    "resource": "exam:Test",
+    "previous_value": "[{\"student\": \"100000000005\", \"status\": \"final\", \"final\": 0.0, \"original\": null}, {\"student\": \"546251100227\", \"status\": \"final\", \"final\": 50.0, \"original\": 50.0}]",
+    "new_value": "удалено работ: 2",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-10T14:50:08.077Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 47,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "password_changed",
+    "resource": "user:3",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T05:47:09.541Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 48,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "password_changed",
+    "resource": "user:3",
+    "previous_value": "",
+    "new_value": "",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T05:47:12.333Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 49,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_updated",
+    "resource": "user:6",
+    "previous_value": "{'edu_group': '', 'is_active': True, 'role': 'teacher', 'full_name': 'Sobirov Otabek Akbarovich'}",
+    "new_value": "{'edu_group': '', 'is_active': False, 'role': 'teacher', 'full_name': 'Sobirov Otabek Akbarovich'}",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:10:14.354Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 50,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_created",
+    "resource": "user:7",
+    "previous_value": "",
+    "new_value": "teacher",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:01.984Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 51,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:6",
+    "previous_value": "",
+    "new_value": "Основы Кибербезопасности",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:33.021Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 52,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:6",
+    "previous_value": "",
+    "new_value": "Babayazov Saidbek Polatovich / Основы Кибербезопасности / CYB25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:43.384Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 53,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:7",
+    "previous_value": "",
+    "new_value": "Babayazov Saidbek Polatovich / Основы Кибербезопасности / ECO25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:43.387Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 54,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:8",
+    "previous_value": "",
+    "new_value": "Babayazov Saidbek Polatovich / Основы Кибербезопасности / LAW25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:43.390Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 55,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:9",
+    "previous_value": "",
+    "new_value": "Babayazov Saidbek Polatovich / Основы Кибербезопасности / MNG25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:11:43.393Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 56,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "user_created",
+    "resource": "user:8",
+    "previous_value": "",
+    "new_value": "student",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:12:44.098Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 57,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "subject_created",
+    "resource": "subject:7",
+    "previous_value": "",
+    "new_value": "Введение в программную инженерию",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:13:10.510Z"
+  }
+},
+{
+  "model": "exams.auditlog",
+  "pk": 58,
+  "fields": {
+    "user": [
+      "100000000003"
+    ],
+    "action": "assignment_created",
+    "resource": "assignment:10",
+    "previous_value": "",
+    "new_value": "Babayazov Saidbek Polatovich / Введение в программную инженерию / SWE25-201",
+    "ip": "127.0.0.1",
+    "created_at": "2026-11-11T09:13:30.956Z"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 1,
+  "fields": {
+    "name": "ЛИНЕЙНАЯ АЛГЕБРА"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 2,
+  "fields": {
+    "name": "ДИСКРЕТНЫЕ СТРУКТУРЫ"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 3,
+  "fields": {
+    "name": "ЭЛЕКТРОНИКА И СХЕМЫ"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 4,
+  "fields": {
+    "name": "ФИЛОСОФИЯ"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 5,
+  "fields": {
+    "name": "Алгоритмы и структуры данных"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 6,
+  "fields": {
+    "name": "Основы Кибербезопасности"
+  }
+},
+{
+  "model": "exams.subject",
+  "pk": 7,
+  "fields": {
+    "name": "Введение в программную инженерию"
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 3,
+  "fields": {
+    "teacher": [
+      "100000000001"
+    ],
+    "subject": 2,
+    "group": 3
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 4,
+  "fields": {
+    "teacher": [
+      "100000000001"
+    ],
+    "subject": 2,
+    "group": 2
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 5,
+  "fields": {
+    "teacher": [
+      "100000000001"
+    ],
+    "subject": 2,
+    "group": 1
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 6,
+  "fields": {
+    "teacher": [
+      "100000000006"
+    ],
+    "subject": 6,
+    "group": 2
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 7,
+  "fields": {
+    "teacher": [
+      "100000000006"
+    ],
+    "subject": 6,
+    "group": 5
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 8,
+  "fields": {
+    "teacher": [
+      "100000000006"
+    ],
+    "subject": 6,
+    "group": 4
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 9,
+  "fields": {
+    "teacher": [
+      "100000000006"
+    ],
+    "subject": 6,
+    "group": 6
+  }
+},
+{
+  "model": "exams.teachingassignment",
+  "pk": 10,
+  "fields": {
+    "teacher": [
+      "100000000006"
+    ],
+    "subject": 7,
+    "group": 1
+  }
+},
+{
+  "model": "exams.deletionrequest",
+  "pk": 1,
+  "fields": {
+    "exam": null,
+    "exam_title": "wsadassad",
+    "requested_by": [
+      "100000000001"
+    ],
+    "reason": "",
+    "status": "approved",
+    "decision": "",
+    "decided_by": [
+      "100000000003"
+    ],
+    "created_at": "2026-11-09T17:36:56.979Z",
+    "decided_at": "2026-11-09T17:37:44.072Z"
+  }
+},
+{
+  "model": "exams.deletionrequest",
+  "pk": 2,
+  "fields": {
+    "exam": null,
+    "exam_title": "Test",
+    "requested_by": [
+      "100000000001"
+    ],
+    "reason": "",
+    "status": "approved",
+    "decision": "",
+    "decided_by": [
+      "100000000003"
+    ],
+    "created_at": "2026-11-10T14:48:54.852Z",
+    "decided_at": "2026-11-10T14:50:08.020Z"
+  }
+}
+]
