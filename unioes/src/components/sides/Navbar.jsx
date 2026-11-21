@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 import { logout as logoutSession } from "../../api/client.js";
 import { useLocation, useNavigate } from "react-router";
 import { Layout, Avatar, Badge, Button, Dropdown, Space, Typography, ConfigProvider } from "antd";
 import { pageTitle } from "./Menu.jsx";
-=======
-import { useLocation, useNavigate } from "react-router";
-import { Layout, Avatar, Badge, Button, Dropdown, Space, Typography, ConfigProvider } from "antd";
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 import {
   BellOutlined,
   UserOutlined,
@@ -19,17 +14,6 @@ const { Header } = Layout;
 const { Text } = Typography;
 
 // Заголовок страницы по текущему пути
-<<<<<<< HEAD
-
-=======
-const TITLES = {
-  exams: "Доступные экзамены",
-  results: "Результаты",
-  appeals: "Аппеляции",
-  profile: "Профиль",
-  users: "Пользователи",
-};
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 
 const getUser = () => {
   try {
@@ -41,31 +25,15 @@ const getUser = () => {
   }
 };
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
 export default function Navbar({ onMenuClick }) {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const user = getUser();
 
-<<<<<<< HEAD
   const title = pageTitle(user?.role, pathname);
 
   const logout = () => {
     logoutSession().finally(() => navigate("/login", { replace: true }));
-=======
-  const last = pathname.split("/").filter(Boolean).pop();
-  const title = TITLES[last] || "Главная";
-
-  const logout = () => {
-    ["token", "user"].forEach((k) => {
-      localStorage.removeItem(k);
-      sessionStorage.removeItem(k);
-    });
-    navigate("/login", { replace: true });
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
   };
 
   const menu = {
@@ -135,11 +103,7 @@ export default function Navbar({ onMenuClick }) {
               <Avatar src={user?.image} icon={<UserOutlined />} />
               <div className="hidden sm:block" style={{ lineHeight: 1.2 }}>
                 <div style={{ fontWeight: 600, fontSize: 14 }}>
-<<<<<<< HEAD
                   {user?.shortName || user?.fullName }. 
-=======
-                  {user?.shortName || user?.fullName}
->>>>>>> a76c1519b266e317dfa05201d78f67214b4b70dc
                 </div>
                 <Text type="secondary" style={{ fontSize: 12 }}>
                   {user?.eduGroup}
