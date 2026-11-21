@@ -165,7 +165,7 @@ function useExamGuard(attemptId, enabled, onTerminate) {
   const overlay = (
     <>
       {/* водяной знак: фото экрана можно связать со студентом */}
-      <div aria-hidden className="pointer-events-none fixed inset-0 z-[1000]" style={{ opacity: 0.07, backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(svg)}")` }} />
+      <div aria-hidden className="pointer-events-none fixed inset-0 z-1000" style={{ opacity: 0.07, backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(svg)}")` }} />
       <style>{"@media print { .exam-guard { display: none !important } body::before { content: 'Печать запрещена' } }"}</style>
       <Modal open={enabled && !inFs} closable={false} maskClosable={false} keyboard={false} footer={null} centered title="Экзамен проходит в полноэкранном режиме">
         <p className="mb-3">Не закрывайте полноэкранный режим и не переключайтесь на другие вкладки и программы: каждый выход фиксируется и виден преподавателю. После нескольких нарушений экзамен завершается автоматически. Копирование и печать отключены. Время продолжает идти.</p>
